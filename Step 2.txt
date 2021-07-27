@@ -1,0 +1,49 @@
+Open git bash into project folder.
+
+owner@DESKTOP-FCMRAKA MINGW64 ~/Downloads/Grade calculator
+$ git -- git init
+unknown option: --
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+owner@DESKTOP-FCMRAKA MINGW64 ~/Downloads/Grade calculator
+$ git init
+Initialized empty Git repository in C:/Users/owner/Downloads/Grade calculator/.git/
+
+owner@DESKTOP-FCMRAKA MINGW64 ~/Downloads/Grade calculator (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+owner@DESKTOP-FCMRAKA MINGW64 ~/Downloads/Grade calculator (master)
+$ git add .
+warning: LF will be replaced by CRLF in README.md.
+
+owner@DESKTOP-FCMRAKA MINGW64 ~/Downloads/Grade calculator (master)
+$ git commit -m "first commit"
+[master (root-commit) fac94ed] first commit
+ 55 files changed, 27181 insertions(+)
+ create mode 
+
+
+owner@DESKTOP-FCMRAKA MINGW64 ~/Downloads/Grade calculator (master)
+$ git remote add origin git address
+
+owner@DESKTOP-FCMRAKA MINGW64 ~/Downloads/Grade calculator (master)
+$ git push origin master
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
+
+Enter passphrase for key '/c/Users/owner/.ssh/id_rsa':
+
+To github.com:117Ayushi/Grade-Calc.git
+ * [new branch]      master -> master

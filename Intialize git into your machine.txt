@@ -1,0 +1,38 @@
+Initial git setup 
+
+dowload git 
+ 
+Open git bash into project folder 
+run following commmands one by one:
+
+
+$ssh-keygen -t rsa -b 4096 -C "your GitHub email address" press Enter.
+
+ This will Generate public/private rsa key pair.
+
+ "Enter a file in which to save the key," press Enter. 
+This accepts the default file location.
+
+ Enter passphrase (empty for no passphrase): (enter here something and also remember that then enter again is recomended)
+
+ Ensure the ssh-agent is running: --  eval 
+$(ssh-agent -s)
+
+Now Add your SSH private key to the ssh-agent. --for adding run command  
+$ ssh-add ~/.ssh/id_rsa
+
+Now you have to add public SSH key to your GitHub account (find it in setting section*)
+
+copy your public key by running this command 
+$clip < ~/.ssh/id_rsa.pub
+
+ *Profile Settings click on SSH and GPG key then click on new SSH-key . Give a title any thing you like then paste your key here control v then click on "add ssh key" then it will ask for one time password confirm password,  so we have added key successfully.
+
+  
+Now create a new repository,
+-----------------------------------
+
+Choose repository name
+Select public default option
+if you want readme.md file then initialize it otherwise leave it then click on "create repository" 
+Now leave this screen as it is and go to your local directory where your code is, and follow step 2.
